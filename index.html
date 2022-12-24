@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="./main.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>🤟nonflowers❤️</title>
+
+</head>
+
+<body onload="load()">
+
+  <div id="loader">
+    <div id="spinner">
+
+    </div>
+    <div id="load-text">❤️🤟&nbsp;&nbsp;&nbsp;</div>
+  </div>
+
+  <div style="display:none;" id="content" class="emerge">
+    <div><br></div>
+    <div id="canvas-container"></div>
+    <div><br></div>
+    <table style="width:600px;text-align: center;">
+      <tr>
+        <td style="text-align:right">
+          <div id="options" class="option-bar">
+            <i class="material-icons button" onclick="location.reload()">refresh</i>
+            <i class="material-icons button" onclick="download()">file_download</i>
+          </div>
+        </td>
+      <tr>
+
+      <tr>
+        <td>
+          <div id="summary" style="display:none" class="emerge"></div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="text-align:right">
+          <div id="settings" style="display:none" class="emerge">
+            <p>Seed: <input title="random seed" id="inp-seed" /></p>
+            <p style="text-align: center;">
+              <button onclick="reloadWSeed(document.getElementById('inp-seed').value)">
+                Generate
+              </button>
+            </p>
+          </div>
+        </td>
+      </tr>
+
+
+
+    </table>
+  </div>
+
+</body>
+
+</html>
